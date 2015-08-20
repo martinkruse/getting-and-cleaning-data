@@ -10,7 +10,7 @@ It contains the following files:
 # Requirements
 
 The script run_analysis.R requires the dataset to be downloaded and available on the computer run_analysis.R is to be used on.
-The dataset should be unpacked ("unzipped") and the script run_analysis.R should be on the top level of the dataset. Further
+The dataset should be unpacked and the script run_analysis.R should be on the top level of the dataset. Further
 instructions on the usage of run_analysis.R can also be found as comments in the file itself.
 
 #Functionality of run_analysis.R
