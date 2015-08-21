@@ -15,6 +15,6 @@ Next, the script run_analysis.R uses a "grep" command to search for all columns 
 
 In the following step, the script run_analysis.R replaces the number code for the performed activities with a character-based description of the activity. The descriptions of the activities are extracted from the provided file "activity_labels.txt". Afterwards, it calculates the mean for each column of the merged dataset and sorts it by the person having performed one of the six activities monitored. In a last step the script writes the calculated information into a file "tidy_data_set.txt", which can be read and assigned to a data frame named "data" in R with the command "data <- read.table("tidy_data_set.txt", sep = ",")."
 
-#Dimensions of data points and units
-Please note that all data has been normalized to a range of -1 to +1 by the creators of the data set. Because of this all values are without units.
+#Dimensions of data points and units, renaming of labels of variables
+Please note that all data has been normalized to a range of -1 to +1 by the creators of the data set. Because of this all values are without units. For the purpose of making the labels of variables more readable, the script renames variables in the following way: "xxxx-mean()-XYZ" or "xxxx-std()-XYZ" will be changed to "xxxx-Mean-XYZ" or "xxxx-Std-XYZ", respectively.
   
