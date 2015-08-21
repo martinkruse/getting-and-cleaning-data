@@ -34,6 +34,7 @@ mean_stdev_column_names <- features[mean_stdev,2]
 mean_stdev_column_names<- gsub("-mean", "-Mean", mean_stdev_column_names)
 mean_stdev_column_names <- gsub("-std", "-Std", mean_stdev_column_names)
 mean_stdev_column_names <- gsub("\\()", "", mean_stdev_column_names)
+mean_stdev_column_names<- gsub("-MeanFreq", "-Mean-Freq", mean_stdev_column_names)
 
 #The information stored in "mean_stdev" is used to extract only the columns containing
 #means and standard deviations from the merged data frame. It also selects the last two
