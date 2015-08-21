@@ -39,10 +39,6 @@ colnames(merged_data_set) <- c(mean_stdev_column_names, "activity", "person")
 #activity type.
 merged_data_set[, 80] <- activity_labels[merged_data_set[, 80], 2]
 
-#Convert the entries for activities and persons into factors.
-merged_data_set$activity <- as.factor(merged_data_set$activity)
-merged_data_set$person <- as.factor(merged_data_set$person)
-
 #Use the aggregate function to calculate the mean of all columns of the merged data set
 #for each activity and person. The function calculates this for all but the last two columns
 #as they contain only information about the type of activity and the persons.
