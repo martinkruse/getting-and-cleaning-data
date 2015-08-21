@@ -28,6 +28,13 @@ mean_stdev <- grep(".*mean.*|.*std.*", features[,2])
 #The following command extracts the names of the columns selected in the previous step.
 mean_stdev_column_names <- features[mean_stdev,2]
 
+#The following code renames the labels for the variables to make them more readable.
+#For instance, a variable name "xxxx-mean()-XYZ" or "xxxx-std()-XYZ" will be changed to 
+#"xxxx-Mean-XYZ" or "xxxx-Std-XYZ", respectively.
+mean_stdev_column_names<- gsub("-mean", "-Mean", mean_stdev_column_names)
+mean_stdev_column_names <- gsub("-std", "-Std", mean_stdev_column_names)
+mean_stdev_column_names <- gsub("\\()", "", mean_stdev_column_names)
+
 #The information stored in "mean_stdev" is used to extract only the columns containing
 #means and standard deviations from the merged data frame. It also selects the last two
 #columns of the data frame as they contain the information about the type of activity and
