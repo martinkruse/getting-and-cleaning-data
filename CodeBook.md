@@ -11,5 +11,5 @@ The script run_analysis.R first extracts the information what columns of the tes
 
 #Analysis of the merged dataset
 
-In a first step, the script run_analysis.R replaces the number code for the performed activities with a character-based description of the activity. The descriptions of the activities are extracted from the provided file "activity_labels.txt". Afterwards, it calculates the mean for each column of the merged dataset and sorts it by the person having perfomed one of the six activities monitored. In a last step the script writes the calculated information into a file "tidy_data_set.txt", which can be read and assigned to a data frame named "data" in R with the command "data <- read.table("tidy_data_set.txt", sep = ",")."
+In a first step, the script run_analysis.R replaces the number code for the performed activities with a character-based description of the activity. The descriptions of the activities are extracted from the provided file "activity_labels.txt". Afterwards, it calculates the mean for each column of the merged dataset and sorts it by the person having performed one of the six activities monitored. In a last step the script writes the calculated information into a file "tidy_data_set.txt", which can be read and assigned to a data frame named "data" in R with the command "data <- read.table("tidy_data_set.txt", sep = ",")."
   
