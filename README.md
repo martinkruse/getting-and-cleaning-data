@@ -19,7 +19,7 @@ The script extracts all data containing information about "mean" and "standard d
 training datasets and merges them into one new data frame. Afterwards, it calculates the mean values for each parameter present
 in the new data frame based on two criteria:
 
-  1. It calculates these values for every person that has particpated in the study.
+  1. It calculates these values for every person that has participated in the study.
   2. For every person, it calculates the mean values for all parameters in six different categories of activities.
   
 Further information about the data and the variables can be found in CodeBook.md
