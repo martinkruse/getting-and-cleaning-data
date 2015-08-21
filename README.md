@@ -10,17 +10,14 @@ It contains the following files:
 # Requirements
 
 The script run_analysis.R requires the dataset to be downloaded and available on the computer run_analysis.R is to be used on.
-The dataset should be unpacked and the script run_analysis.R should be on the top level of the dataset. Further
-instructions on the usage of run_analysis.R can also be found as comments in the file itself.
+The dataset should be unpacked and the script run_analysis.R should be on the top level of the dataset. Further instructions on the usage of run_analysis.R can also be found as comments in the file itself.
 
 #Functionality of run_analysis.R
 
-The script extracts all data containing information about "mean" and "standard deviation" values from the testing and
-training datasets and merges them into one new data frame. Afterwards, it calculates the mean values for each parameter present
-in the new data frame based on two criteria:
+The script extracts all data containing information about "mean" and "standard deviation" values from the testing and training datasets and merges them into one new data frame. It renames the labels of variables to make them more readable. Afterwards, it calculates the mean values for each parameter present in the new data frame based on two criteria:
 
   1. It calculates these values for every person that has participated in the study.
   2. For every person, it calculates the mean values for all parameters in six different categories of activities.
   
-Further information about the data and the variables can be found in CodeBook.md
+Further information about the data and the variables can be found in CodeBook.md.
   
